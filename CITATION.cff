@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use Common Sense Skill, please cite the project and retain its MIT license notice."
+title: "Common Sense Skill"
+version: "0.1.4"
+type: software
+license: MIT
+authors:
+  - family-names: Hurling
+    given-names: Justin
+    affiliation: "Founder, Originator and Project Creator; Marksman Capital USA LLC"
+repository-code: "https://github.com/Jhurling2024/common-sense-skill"
+abstract: "An evidence-based, free-first preflight skill for practical decision quality in AI engineering and automation."
+keywords:
+  - agent-skills
+  - opencode
+  - artificial-intelligence
+  - engineering-judgment
+  - verification
+  - cost-governance

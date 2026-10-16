@@ -1,0 +1,4 @@
+# Checkout integrity: SHA256SUMS hashes the committed bytes of every file.
+# Disable line-ending conversion so Windows (core.autocrlf), Linux and macOS
+# all check out byte-identical files and the manifest verifies everywhere.
+* -text
