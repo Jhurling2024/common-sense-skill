@@ -97,7 +97,10 @@ class SkillPackageTests(unittest.TestCase):
             if not p.is_file():
                 continue
             rel = p.relative_to(ROOT).as_posix()
-            if rel == "SHA256SUMS" or "__pycache__" in rel.split("/"):
+            parts = rel.split("/")
+            # Skip non-package internals: bytecode caches and, when the package
+            # IS the repository root (public-repo layout), the VCS directory.
+            if rel == "SHA256SUMS" or {"__pycache__", ".git"} & set(parts):
                 continue
             on_disk.add(rel)
         self.assertEqual(listed, on_disk, "manifest must cover exactly the package files")

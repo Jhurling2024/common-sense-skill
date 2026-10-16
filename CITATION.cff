@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use Common Sense Skill, please cite the project and retain its MIT license notice."
 title: "Common Sense Skill"
-version: "0.1.4"
+version: "0.1.5"
 type: software
 license: MIT
 authors:

@@ -1,0 +1,19 @@
+# Runs the package test suite for this repository. In the origin repository
+# (Jhurling2024/marksman-capital-usa) this nested copy is inert - GitHub only
+# loads workflows from the repository-root .github/workflows/ - where the
+# root-level workflow covers common-sense/** instead. This copy becomes active
+# when the package IS the repository root (public distribution layout).
+name: common-sense-package-tests
+
+on: [push, pull_request]
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run package tests (static packaging checks, incl. SHA-256 manifest)
+        run: python -m unittest discover -s tests -v

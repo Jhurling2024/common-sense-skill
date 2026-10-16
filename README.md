@@ -3,7 +3,7 @@
 > **Think ahead. Reuse what works. Verify before claiming success.**
 
 **Founder, Originator and Project Creator: Justin Hurling** · [GitHub: @Jhurling2024](https://github.com/Jhurling2024)  
-**Copyright notice: © 2026 Marksman Capital USA LLC** · **License: MIT** · v0.1.4
+**Copyright notice: © 2026 Marksman Capital USA LLC** · **License: MIT** · v0.1.5
 
 Common Sense Skill is a portable Agent Skill that prompts coding and automation agents to exercise practical judgment *before* creating complexity. It is intended for OpenCode and other tools compatible with the [Agent Skills format](https://agentskills.io/specification).
 
@@ -56,7 +56,7 @@ Runs without dependencies:
 python -m unittest discover -s tests -v
 ```
 
-The included tests validate **packaging and static safety properties only**, not the quality of an agent's real decisions. Behavioral evaluation ships as `tests/evaluation-cases.json` (31 scenarios across six categories, including negative and adversarial cases) with comparative with/without-skill results in `tests/evaluation-results.md`; the full release report is `docs/COMMON-SENSE-EVALUATION-REPORT.md` in this repository.
+The included tests validate **packaging and static safety properties only**, not the quality of an agent's real decisions. Behavioral evaluation ships as `tests/evaluation-cases.json` (31 scenarios across six categories, including negative and adversarial cases) with comparative with/without-skill results in `tests/evaluation-results.md`; the full release report (`docs/COMMON-SENSE-EVALUATION-REPORT.md`) is retained in the origin repository `Jhurling2024/marksman-capital-usa` (private); the table and limitations in `tests/evaluation-results.md` above stand alone.
 
 ## Credit and reuse
 
@@ -68,7 +68,7 @@ See [`docs/MONETIZATION.md`](docs/MONETIZATION.md) for ethical paid services and
 
 ## Project status
 
-**v0.1.4 — released through [`Jhurling2024/marksman-capital-usa`](https://github.com/Jhurling2024/marksman-capital-usa) under owner authorization (Issue #47, 2026-10-16). Public distribution: [`Jhurling2024/common-sense-skill`](https://github.com/Jhurling2024/common-sense-skill).** Installation and activation are separate from publication: the owner's local machine runs v0.1.1 (hash-verified 2026-10-14), and activation across other local agents requires its own approval. Content was generated from a thematic review of accessible user conversations and project history; not an exhaustive audit of every archived message. Public materials deliberately contain no internal account identifiers, credentials, unpublished source code, private conversation transcripts or machine-specific paths.
+**v0.1.5 — released through [`Jhurling2024/marksman-capital-usa`](https://github.com/Jhurling2024/marksman-capital-usa) under owner authorization (Issue #47, 2026-10-16). Public distribution: [`Jhurling2024/common-sense-skill`](https://github.com/Jhurling2024/common-sense-skill).** Installation and activation are separate from publication: the owner's local machine runs v0.1.1 (hash-verified 2026-10-14), and activation across other local agents requires its own approval. Content was generated from a thematic review of accessible user conversations and project history; not an exhaustive audit of every archived message. Public materials deliberately contain no internal account identifiers, credentials, unpublished source code, private conversation transcripts or machine-specific paths.
 
 ## Sources
 

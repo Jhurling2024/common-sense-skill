@@ -17,7 +17,7 @@ complexity 5/5 → 5/5 · evidence 6/6 → 6/6 · practical 4/5 → 4/5 · risk 
 - Stratum split (controls home-field advantage): skill-origin cases 14/16 → 16/16;
   newly written cases 13/15 → 14/15 — the skilled arm leads in both strata.
 
-Method, failure analysis and limitations: `docs/COMMON-SENSE-EVALUATION-REPORT.md`
+Method, failure analysis and limitations: `docs/COMMON-SENSE-EVALUATION-REPORT.md` in the origin repository (`Jhurling2024/marksman-capital-usa`, private)
 in the release repository. Raw artifacts: `docs/evaluation/` (arm responses, blind
 pairs, blind key, grader output).
 

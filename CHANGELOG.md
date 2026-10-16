@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.5] — public root-layout compatibility, 2026-10-16
+
+- Fixed the packaging test to exclude `.git/` internals from the manifest coverage
+  check: the suite now passes both when the package is a **subdirectory** (origin
+  repository layout) and when the package **is the repository root** (public
+  repository layout). Caught by clean-environment verification of the public
+  `v0.1.4` clone — hashes were 21/21 correct, but the coverage assertion read
+  `.git/**`.
+- Added an in-package CI workflow (`.github/workflows/common-sense-package-tests.yml`)
+  so the public repository runs the same 9-test suite on every push/PR (inert while
+  the package is nested, e.g. in the origin repository).
+- Corrected report references to name the origin repository explicitly — the full
+  evaluation/security/inventory reports are not part of this package.
+- No skill-body changes; evaluation results carry over unchanged.
+
 ## [0.1.4] — owner decisions recorded; public distribution, 2026-10-16
 
 - **Visibility decided by owner:** a dedicated **public** repository
@@ -25,7 +40,7 @@
 ## [0.1.2] — release preparation, 2026-10-16
 
 - Expanded the behavioral evaluation suite from 16 to 31 scenarios: six categories (practical, complexity, evidence, risk, architecture, approval) with at least five scenarios each, including negative and adversarial cases.
-- Added comparative with/without-skill evaluation results (`tests/evaluation-results.md`; full report: `docs/COMMON-SENSE-EVALUATION-REPORT.md`).
+- Added comparative with/without-skill evaluation results (`tests/evaluation-results.md`; full report: `docs/COMMON-SENSE-EVALUATION-REPORT.md`, retained in the origin repository).
 - Corrected the frontmatter compatibility claim: invocation verified in OpenCode; other runtimes previously named without verification now marked unverified.
 - Extended package tests: 30-scenario minimum, category coverage, adversarial/negative coverage, SHA-256 manifest freshness, machine-specific-path guard.
 - Recorded the owner publication approval (GitHub Issue #47, 2026-10-16) in `docs/PUBLICATION-APPROVAL.md`; target repository changed from the proposed standalone repo to `Jhurling2024/marksman-capital-usa`.
